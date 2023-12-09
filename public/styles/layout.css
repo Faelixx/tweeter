@@ -18,8 +18,33 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+
+nav {
+  display: flex;
+  height: 120px;
+  width: 1;
+  background-color: #3056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 50px;
+  justify-content: space-between;
+  }
+
+  .logo {
+    font-family: 'Bungee', sans-serif;
+    font-size: 40px;
+  }
+
+  .fa-solid {
+    color: red;
+    padding-left: 80px;
+  }
+

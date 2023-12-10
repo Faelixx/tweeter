@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+  background-color: #133B2F;
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+
+
+.header-profile {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}

@@ -15,8 +15,8 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #14DBA9;
+  background-color: #192622;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
 }
@@ -28,7 +28,7 @@ body {
 
 nav {
   height: 120px;
-  background-color: #3056A1;
+  background-color: #17FFAA;
   color: #FFFFFF;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -53,14 +53,3 @@ nav {
     color: red;
     padding-left: 80px;
   }
-
-  .profile-pic {
-    border-radius: 50%;
-  }
-
-  .profile-pic-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-

@@ -2,8 +2,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 400px;
+  height: 520px;
   background-color: #133B2F;
+  background-image: url(https://i.imgur.com/sVsbDVL.png);
 }
 
 .profile-pic {
@@ -11,9 +12,6 @@ header {
   align-items: center;
   border-radius: 50%;
 }
-
-
-
 
 .header-profile {
   display: flex;

@@ -25,31 +25,19 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+main {
+  background-color: #192622;
+  display: flex;
+}
 
-nav {
-  height: 120px;
-  background-color: #17FFAA;
-  color: #FFFFFF;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 50px;
+.container {
+  background-color: #192622;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  }
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 0 58.25px 0 58.25px;
+}
 
-  .fixed-top {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .logo {
-    font-family: 'Bungee', sans-serif;
-    font-size: 40px;
-  }
-
-  .fa-solid {
-    color: red;
-    padding-left: 80px;
-  }

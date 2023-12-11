@@ -1,0 +1,24 @@
+.new-tweet {
+  background-color: #192622;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.tweet-text {
+  resize: none;
+  border-top-width: 0px;
+  border-top-style: solid;
+  border-right-width: 0px;
+  border-right-style: solid;
+  border-left-width: 0px;
+  border-left-style: solid;
+  color: #14DBA9;
+  background-color: #192622;
+  display: flex;
+  align-content: flex-end;
+  
+}

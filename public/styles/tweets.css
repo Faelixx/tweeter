@@ -1,0 +1,101 @@
+#tweet-profile-pic {
+  height: 50px;
+  padding-left: 0px;
+  margin-left: 20px;
+}
+
+.tweet-box {
+  margin-left: 58.25px;
+  margin-right: 58.25px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #133B2F;
+  background-image: url(https://i.imgur.com/sVsbDVL.png);
+}
+
+.tweet-box > hr:nth-child(3) {
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+
+.all-tweets > article:nth-child(1) {
+  margin-left: 35px;
+}
+
+#tweet-display-name {
+  padding-left: 10px;
+  display: inline;
+}
+
+.tweet-profile {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-age-share {
+  display: flex;
+}
+
+.tweet-username {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: 1;
+}
+
+.tweet-username > p:nth-child(1) {
+  padding-right: 0px;
+  margin-right: 20px;
+  color: rgb(55, 237, 191, 0.5);
+  --darkreader-inline-color: rgba(68, 238, 195, 0.5);
+}
+
+
+.rep-share-like {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+  font-size: small;
+  align-items: center;
+}
+
+.fa-heart {
+  padding-left: 10px;
+}
+
+i.fa-solid:nth-child(2) {
+  padding-left: 10px;
+}
+
+.tweet-age-share > p:nth-child(1) {
+  margin-left: 20px;
+  font-size: medium;
+  margin-top: 8px;
+}
+
+.rep-share-like > p:nth-child(1) {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.all-tweets > article:nth-child(1) {
+  margin-left: 0px;
+}
+
+#tweet-body {
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.tweet-box:hover {
+  box-shadow: 20px 20px wheat;
+}
+
+.fa-solid:hover {
+  color:wheat;
+  cursor: pointer;
+}

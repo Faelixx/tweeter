@@ -1,10 +1,12 @@
-header {
+#profile-head {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 520px;
   background-color: #133B2F;
   background-image: url(https://i.imgur.com/sVsbDVL.png);
+  margin-right: 58.25px;
+  margin-left: 58.25px;
 }
 
 .profile-pic {

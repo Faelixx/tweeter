@@ -24,7 +24,10 @@
   border-width: 0px;
   width: 90%;
   height: 35px;
-  margin-left: 35px;
+  color: #14DBA9;
+  font-weight: bolder;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .tweet-charCount {

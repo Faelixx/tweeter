@@ -33,7 +33,7 @@ const tweetData = [
 const renderTweets = function (tweets) {
   for (let tweet of tweets) { 
     let $renderedTweet = createTweetElement(tweet);
-    $('#all-tweets').append($renderedTweet);
+    $('#all-tweets').prepend($renderedTweet);
   };
 };
 
@@ -67,3 +67,12 @@ const createTweetElement = function (tweet) {
 };
 
 renderTweets(tweetData);
+
+const $form = $('#create-new-tweet');
+
+$form.on('submit' , (event) => {
+  event.preventDefault();
+
+  const formData = $form.serialize();
+  console.log(formData);
+});

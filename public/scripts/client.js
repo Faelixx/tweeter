@@ -6,24 +6,30 @@
 
 $(() => {
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function (tweet) {
     let $tweet = $(`
     <article class ="tweet">
             <div class="tweet-box">
               <header>
                 <div class="tweet-profile">
-                  <img id="tweet-profile-pic"  src="${tweet["user"]["avatars"]}">
-                  <p id="tweet-display-name">${tweet["user"]["name"]}</p>
+                  <img id="tweet-profile-pic"  src="${escape(tweet["user"]["avatars"])}">
+                  <p id="tweet-display-name">${escape(tweet["user"]["name"])}</p>
                   <div class="tweet-username">
-                    <p>${tweet["user"]["handle"]}</p>
+                    <p>${escape(tweet["user"]["handle"])}</p>
                   </div>
                 </div>
               </header>
-                <p id="tweet-body">${tweet["content"]["text"]}</p>
+                <p id="tweet-body">${escape(tweet["content"]["text"])}</p>
                 <hr>
                 <footer>
                   <div class="tweet-age-share">
-                    <p>${timeago.format(tweet["created_at"])}</p>
+                    <p>${escape(timeago.format(tweet["created_at"]))}</p>
                     <div class="rep-share-like">
                       <p><i class="fa-solid fa-flag"></i> <i class="fa-solid fa-retweet"></i> <i class="fa-solid fa-heart"></i> </p>
                     </div>
@@ -31,7 +37,7 @@ $(() => {
                 </footer>
             </div>
           </article>
-    `)
+    `);
     return $tweet;
   };
   
@@ -64,7 +70,7 @@ $(() => {
   const textAreaValue = document.getElementById('tweet-text').value;
   const charLimit = 140;
 
-  if (textAreaValue.trim() == '' || textAreaValue.trim == null) {
+  if (textAreaValue.trim() == '' || textAreaValue.trim() == null) {
     alert("Cannot create empty tweets");
   } else if (textAreaValue.length > charLimit) {
     alert("Cannot tweet more than 140 characters.")

@@ -64,16 +64,29 @@ $(() => {
   loadTweets();
 
   const $form = $('#create-new-tweet');
+
+  const showError = function(errorElement, errorMessage) {
+    document.querySelector("."+errorElement).classList.add("display-error");
+    document.querySelector("."+errorElement).innerHTML = errorMessage;
+  };
   
+  const clearError = () => {
+    let errors = document.querySelectorAll(".error");
+    for (let error of errors) {
+      error.classList.remove("display-error");
+    };
+  }; 
+
   $form.on('submit', function(event) {
   event.preventDefault();
+  clearError();
   const textAreaValue = document.getElementById('tweet-text').value;
   const charLimit = 140;
 
   if (textAreaValue.trim() == '' || textAreaValue.trim() == null) {
-    alert("Cannot create empty tweets");
+    showError("tweet-empty", "⚠️Cannot create empty tweets!" );
   } else if (textAreaValue.length > charLimit) {
-    alert("Cannot tweet more than 140 characters.")
+    showError("tweet-tooLong", "🚫Tweets cannot exceed 140 characters.");
   } else {
       event.preventDefault();
       console.log('the form has submitted!');

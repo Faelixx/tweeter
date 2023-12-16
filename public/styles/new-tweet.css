@@ -53,3 +53,22 @@ hr {
   margin-left: 20px;
   
 }
+
+.error {
+  background-color: #192622;
+  margin: 0 20px; 
+  color: wheat;
+  font-size: 26px;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: wheat;
+  display: none; 
+}
+
+.error.display-error {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform: translateY(-20px);
+}

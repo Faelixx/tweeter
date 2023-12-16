@@ -51,6 +51,8 @@
       <section class="new-tweet">
         <div class="container">
           <h2>Compose Tweet</h2>
+            <p class="error tweet-empty"></p>
+            <p class="error tweet-tooLong"></p>
           <form id="create-new-tweet">
             <label for="tweet-text" id="tweet-text-label">What Are You Humming About?</label>
             <textarea name="text" onkeyup="countChar(this)" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' id="tweet-text"></textarea>

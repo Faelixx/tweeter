@@ -43,7 +43,7 @@ $(() => {
   };
   
   const $section = $('#all-tweets');
-  
+
   // Show all tweets
   const renderTweets = function (tweets) {
     $section.empty();
@@ -65,7 +65,7 @@ $(() => {
   
   loadTweets();
 
-  const $form = $('#create-new-tweet');
+  const $form = $('.create-new-tweet');
 
   const showError = function(errorElement, errorMessage) {
     document.querySelector("."+errorElement).classList.add("display-error");
@@ -80,6 +80,7 @@ $(() => {
   }; 
 
   $form.on('submit', function(event) {
+  
   event.preventDefault();
   clearError();
   const textAreaValue = document.getElementById('tweet-text').value;

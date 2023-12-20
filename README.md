@@ -14,3 +14,8 @@ Tweeter is a simple, single-page Twitter clone that uses jQuery, HTML5 and CSS3 
 - Express
 - Node 5.10.x or above
 - Body-parser 1.15.2
+
+## Screenshots 
+
+!["Tweeter Nav Bar, Profile and Create new tweet"](https://github.com/Faelixx/tweeter/blob/master/docs/tweeter.png?raw=true)
+!["Canned Tweets"](https://github.com/Faelixx/tweeter/blob/master/docs/tweets.png?raw=true)

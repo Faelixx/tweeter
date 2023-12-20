@@ -5,13 +5,14 @@
  */
 
 $(() => {
-
+  // Used to disable any XSS in create new tweet field.
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
+  // Create new tweet
   const createTweetElement = function (tweet) {
     let $tweet = $(`
     <article class ="tweet">
@@ -42,7 +43,8 @@ $(() => {
   };
   
   const $section = $('#all-tweets');
-
+  
+  // Show all tweets
   const renderTweets = function (tweets) {
     $section.empty();
     for (let tweet of tweets) { 

@@ -1,4 +1,4 @@
-#tweet-profile-pic {
+.tweet-profile-pic {
   height: 50px;
   padding-left: 0px;
   margin-left: 20px;
@@ -27,7 +27,7 @@
   margin-left: 35px;
 }
 
-#tweet-display-name {
+.tweet-display-name {
   padding-left: 10px;
   display: inline;
 }
@@ -86,7 +86,7 @@ i.fa-solid:nth-child(2) {
   margin-left: 0px;
 }
 
-#tweet-body {
+.tweet-body {
   margin-left: 20px;
   font-weight: bolder;
 }
@@ -98,4 +98,23 @@ i.fa-solid:nth-child(2) {
 .fa-solid:hover {
   color:wheat;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 960px) {
+  #all-tweets {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  article.tweet:nth-child(1) > div:nth-child(1) {
+    margin-left: 58.25px;
+  }
+  
+  .tweet-age-share {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 }

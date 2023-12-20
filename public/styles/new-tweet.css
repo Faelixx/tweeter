@@ -3,6 +3,10 @@
   padding-top: 20px;
 }
 
+.container {
+  text-align: center;
+}
+
 .container > #tweet-text {
   display: flex;
   flex: 0 0 100%;
@@ -50,7 +54,6 @@ hr {
 
 #tweet-text-label {
   text-align: left;
-  margin-left: 20px;
   
 }
 
@@ -72,3 +75,59 @@ hr {
   margin-bottom: 20px;
   transform: translateY(-20px);
 }
+
+@media only screen and (min-width: 960px) 
+  {
+  .new-tweet{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 125px;
+    flex: 2;
+  }
+  
+  .tweet-button {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  
+  .container {
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .container > h2:nth-child(1) {
+    text-align: center;
+  }
+  
+
+  .create-new-tweet > hr:nth-child(3) {
+  margin-left: 20px;
+  margin-right: 0px;
+  }
+
+  #maxChars {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+  }
+  
+  }
+
+  @media only screen and (min-width: 1330px) {
+    .container {
+      padding-left: 0px;
+      text-align: center;
+    }
+    
+    #tweet-text-label {
+      text-align: center;
+      align-items: center;
+    }
+    
+    .new-tweet {
+      margin-right: 32px;
+    }
+    
+  }

@@ -18,15 +18,15 @@ $(() => {
             <div class="tweet-box">
               <header>
                 <div class="tweet-profile">
-                  <img id="tweet-profile-pic"  src="${escape(tweet["user"]["avatars"])}">
-                  <p id="tweet-display-name">${escape(tweet["user"]["name"])}</p>
+                  <img class="tweet-profile-pic"  src="${escape(tweet["user"]["avatars"])}">
+                  <p class="tweet-display-name">${escape(tweet["user"]["name"])}</p>
                   <div class="tweet-username">
                     <p>${escape(tweet["user"]["handle"])}</p>
                   </div>
                 </div>
               </header>
-                <p id="tweet-body">${escape(tweet["content"]["text"])}</p>
-                <hr>
+                <p class="tweet-body">${escape(tweet["content"]["text"])}</p>
+                <hr class="tweet-box-line">
                 <footer>
                   <div class="tweet-age-share">
                     <p>${escape(timeago.format(tweet["created_at"]))}</p>

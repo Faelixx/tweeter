@@ -41,3 +41,18 @@ main {
   border-color: #133B2F;
 }
 
+@media only screen and (min-width: 960px) {
+  body {
+    display: flex;
+    justify-content: flex-end;
+  }  
+
+  body > main:nth-child(3) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 2;
+  }
+  
+}

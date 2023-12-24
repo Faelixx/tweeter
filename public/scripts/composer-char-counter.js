@@ -1,7 +1,6 @@
 const maxChars = 140;
 
-const characterCounter = document.getElementById('#maxChars');
-
+// Counts remaining characters available in tweet box
 function countChar(val) {
   const len = val.value.length;
     $('#maxChars').text(maxChars - len);

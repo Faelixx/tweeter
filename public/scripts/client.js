@@ -60,7 +60,8 @@ $(() => {
     }).then(function (renderedTweets) {
       console.log('Success: ', renderedTweets);
       renderTweets(renderedTweets);
-    });
+    })
+    .catch((err) => { console.log(err); alert(err)} ); 
   };
   
   loadTweets();
@@ -98,7 +99,7 @@ $(() => {
         method:'POST',
         url:'/tweets',
         data: formData
-      }).then(() => {$form[0].reset()}).then(() => {loadTweets()});
+      }).then(() => {$form[0].reset()}).then(() => {loadTweets()}).catch((err) => { console.log(err); alert(err) });
   }
 });
 });

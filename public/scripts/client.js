@@ -80,6 +80,13 @@ $(() => {
     };
   }; 
 
+  const resetCharCounter = function() {
+    const charCounter = document.getElementById('maxChars')
+    if (charCounter) {
+      charCounter.textContent = 140;
+    }
+  };
+
   $form.on('submit', function(event) {
   
   event.preventDefault();
@@ -99,7 +106,7 @@ $(() => {
         method:'POST',
         url:'/tweets',
         data: formData
-      }).then(() => {$form[0].reset()}).then(() => {loadTweets()}).catch((err) => { console.log(err); alert(err) });
+      }).then(() => {$form[0].reset()}).then(() => {loadTweets(), resetCharCounter()}).catch((err) => { console.log(err); alert(err) });
   }
 });
 });

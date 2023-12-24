@@ -1,15 +1,13 @@
 const maxChars = 140;
 
+const characterCounter = document.getElementById('#maxChars');
+
 function countChar(val) {
   const len = val.value.length;
     $('#maxChars').text(maxChars - len);
     if (len >= maxChars) {
-      $('#maxChars').attr("color", "red");
+      $('#maxChars').css("color", "red");
     } else {
-      $('#maxChars').attr("color", "rgb(55, 237, 191)");
+      $('#maxChars').css("color", "wheat");
     }
 } 
-
-  $(document).ready(function() {
-    
-  });
